@@ -60,16 +60,19 @@
             <li>
               <a
                 href="./arpanihan_cv.pdf"
-                class="bg-color-secondary p-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 w-full" target="_blank"
+                class="bg-color-secondary p-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 w-full"
+                target="_blank"
                 >View My Resume</a
               >
             </li>
 
             <li>
               <a
-              download=""
+                download=""
                 href="./arpanihan_cv.pdf"
-                class="bg-color-secondary p-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 w-full" target="_blank">Download My Resume</a
+                class="bg-color-secondary p-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 w-full"
+                target="_blank"
+                >Download My Resume</a
               >
             </li>
           </ul>
@@ -119,16 +122,19 @@
             <li>
               <a
                 href="./Arpa Nihan_cv.pdf"
-                class="hover:text-color-secondary ease-in duration-200" target="_blank"
+                class="hover:text-color-secondary ease-in duration-200"
+                target="_blank"
                 >View My Resume</a
               >
             </li>
 
             <li>
               <a
-              download=""
+                download=""
                 href="./Arpa Nihan_cv.pdf"
-                class="hover:text-color-secondary ease-in duration-200" target="_blank">Download My Resume</a
+                class="hover:text-color-secondary ease-in duration-200"
+                target="_blank"
+                >Download My Resume</a
               >
             </li>
           </ul>
@@ -275,35 +281,20 @@
 
       <section id="link" class="bg-color-primary-light">
         <div class="container py-20">
-          <div class="text-center m-auto mb-20">
-            <h2 class="font-bold text-color-secondary text-4xl">
+          <div class="flex flex-col items-center mb-6">
+            <h2 class="font-bold text-color-secondary text-4xl mb-2">
               Find Me With One Click
             </h2>
-          </div>
-          <div class="grid grid-cols-3 text-center m-auto mb-20">
-            <div>
+            <hr class="w-1/4 mx-auto border-t-2 border-color-secondary my-4" />
+            <div class="space-x-4">
               <button
                 class="btn rounded-full bg-color-secondary pl-5 pr-5 pt-2 pb-2 font-bold hover:opacity-80 ease-in duration-200"
               >
                 <a
                   href="https://www.linkedin.com/in/arpa-nihan-4080771a0/"
                   target="_blank"
-                  >Linked In</a
-                >
+                  >LinkedIn</a>
               </button>
-            </div>
-            <div>
-              <button
-                class="btn rounded-full bg-color-secondary pl-5 pr-5 pt-2 pb-2 font-bold hover:opacity-80 ease-in duration-200"
-              >
-                <a
-                  href="https://www.facebook.com/arpa.nihan?mibextid=ZbWKwL"
-                  target="_blank"
-                  >Facebook</a
-                >
-              </button>
-            </div>
-            <div>
               <button
                 class="btn rounded-full bg-color-secondary pl-5 pr-5 pt-2 pb-2 font-bold hover:opacity-80 ease-in duration-200"
               >
@@ -317,14 +308,13 @@
       </section>
 
       <section id="contact" class="relative">
+        <div
+          class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
 
         <div
-        class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
-      ></div>
-
-      <div
-        class="w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
-      ></div>
+          class="w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
 
         <div class="container py-20">
           <div class="text-center m-auto mb-20">
@@ -367,7 +357,10 @@
                 class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
                 placeholder="Message"
               ></textarea>
-              <button class="btn mt-10 bg-color-secondary p-3 rounded-lg" onclick="sendMail()">
+              <button
+                class="btn mt-10 bg-color-secondary p-3 rounded-lg"
+                onclick="sendMail()"
+              >
                 Send Message
               </button>
             </div>
@@ -382,12 +375,12 @@
       const menu = document.querySelector("#menu");
       const hlink = document.querySelectorAll("#hlink"); // Use querySelectorAll to select multiple elements
       const faSolid = document.querySelector(".fa-solid");
-    
+
       hamburger.addEventListener("click", () => {
         menu.classList.toggle("hidden");
         faSolid.classList.toggle("fa-xmark");
       });
-    
+
       hlink.forEach((link) => {
         link.addEventListener("click", () => {
           menu.classList.add("hidden");
@@ -395,7 +388,6 @@
         });
       });
     </script>
-    
 
     <script
       type="text/javascript"
